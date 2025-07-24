@@ -33,6 +33,16 @@ h1, h2, h3{
     width: 30px;
 }
 
+/* Header */
+
+#header .lead {
+    font-family: var(--secondary-font);
+}
+
+.section{
+     margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
 /* grid visualisation CSS for testing 
 
