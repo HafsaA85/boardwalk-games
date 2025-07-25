@@ -21,6 +21,16 @@ h1, h2, h3{
     color: var(--primary-color); 
 }
 
+h1,
+h2 {
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+
 .sub-heading-color {
     color: var(--highlight-color);
 }
@@ -39,10 +49,43 @@ h1, h2, h3{
     font-family: var(--secondary-font);
 }
 
+/* Services */
+
+#services.card-footer {
+    font-weight: bold;
+    color: var(--highlight-color);
+    background-color: transparent;
+}
+
+#services.card {
+    margin-bottom: 1.5rem;
+}
+
 .section{
      margin-top: 2rem;
     margin-bottom: 2rem;
 }
+
+/*media queries*/
+
+/*Xlmedia devices (tablets, 1200px and up*/
+@media screen and (min-width:1200px) {
+    /*make all services card same height*/
+    .services.card-body{
+        min-height: 220px;
+    }
+}
+/*XXlmedia devices Large devices and laptops (tablets, 1400px and up*/
+@media screen and (min-width:1400px) {
+    /*make all services card same height*/
+    .services.card-body{
+        min-height: 195;
+    }
+}
+
+
+    
+
 
 /* grid visualisation CSS for testing 
 
