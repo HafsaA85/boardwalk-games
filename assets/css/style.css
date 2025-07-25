@@ -66,30 +66,57 @@ h2 {
     margin-bottom: 2rem;
 }
 
-/*media queries*/
+/* Game library cards */
 
-/*Xlmedia devices (tablets, 1200px and up*/
-@media screen and (min-width:1200px) {
-    /*make all services card same height*/
-    .services.card-body{
-        min-height: 220px;
-    }
-}
-/*XXlmedia devices Large devices and laptops (tablets, 1400px and up*/
-@media screen and (min-width:1400px) {
-    /*make all services card same height*/
-    .services.card-body{
-        min-height: 195;
-    }
+#new-games.card,
+#fav-games.card {
+    border: none;
 }
 
+.fav-games{
+     margin-top: 2rem;
+    margin-bottom: 2rem;
+}
 
-    
+/* Footer / contact */
 
+#contact {
+    background-color: var(--primary-color);
+    color: white;
+    padding-bottom: 3rem;
+}
 
-/* grid visualisation CSS for testing 
+#contact h2 {
+    color: white;
+}
 
-.container,
+#contact .sub-heading-color {
+    color: var(--highlight-color-light);
+}
+
+#contact i {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+#contact .social-links i {
+    color: var(--highlight-color-light);
+    font-size: 1.9rem;
+    transition: color 0.3s ease-in-out;
+}
+
+#contact .social-links i:hover {
+    color: var(--secondary-color);
+}
+
+#contact .table-dark * {
+    background-color: transparent;
+}
+
+/* grid visualisation CSS for testing */
+
+/* .container,
 .row {
     border: 2px solid black;
 }
@@ -97,6 +124,40 @@ h2 {
 .col-12 {
     border: 2px solid white;
     background-color: lightgray;
+} */
+
+/* Media queries */
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+    /* Make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 191px;
+    }
 }
-    */
+
+/* Large devices (small laptops, 992px and up) */
+@media screen and (min-width: 992px) {
+    /* Make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: auto;
+    }
+}
+
+/* xl devices (large desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    /* make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 220px;
+    }
+}
+
+/* xxl devices (larger desktops, 1400px and up) */
+@media screen and (min-width: 1400px) {
+    /* make all service cards the same height for consistency */
+    #services .card-body {
+        min-height: 195px;
+    }
+}
+    
 
