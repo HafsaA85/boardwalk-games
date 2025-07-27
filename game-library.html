@@ -344,6 +344,53 @@
       
 </section>
 
+<!-- Booking inquiry form section -->
+    <section id="reserve-game" class="container section">
+        <div class="row justify-content-center">
+            <div class="col-12 text-center col-md-8">
+                <h2>Reserve a Game</h2>
+                <form action="success.html" method="GET">
+                    <div class="row">
+                        <div class="col-12 col-lg-6 mb-3">
+                            <label for="name" class="form-label">Full name</label>
+                            <input class="form-control" id="name" name="name" type="name" required>
+                        </div>
+
+                        <div class="col-12 col-lg-6 mb-3">
+                            <label for="phone" class="form-label">Phone number</label>
+                            <input class="form-control" id="phone" name="phone" type="phone" required>
+                        </div>
+                        <div class="col-12 col-lg-6 mb-3">
+                            <label for="email" class="form-label">Email <address></address></label>
+                            <input class="form-control" id="email" name="email" type="email" required>
+                        </div>
+                        
+                        <div class="col-12 col-lg-6 mb-3">
+                            <label for="select-game" class="form-label">Select Game</label>
+                            <select id="select-game" class="form-select" name="event-type" type="select-game" required>
+                                <option value="" selected>Select</option>
+                                <option value="regular-play">Reserve a table</option>
+                                <option value="dnd">Dungeons & Dragons</option>
+                                <option value="retro-night">Retro Game Night</option>
+                                <option value="tournament">Tournament</option>
+                                <option value="kids-party">Kids party</option>
+                            </select>
+                        </div>
+
+                        <input type="date" class="form-control" id="reservation-date" name="reservation-date" min="2025-07-01" required>
+
+                        <div class="col-12 mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" rows="6" id="message" name="message" required></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn custom-button-outline" class="text-end mt-4">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     </main>
 
     <!-- footer / contact section -->
